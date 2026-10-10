@@ -1,28 +1,41 @@
-# ⚡ 2D Python Redstone Engine (Beta 1.0)
+Python Redstone Engine - Beta 2.0
+Pygame kullanılarak geliştirilmiş, modüler bir 2D Redstone ve Mantık Devresi Simülatörü. Minecraft tarzı kırmızı taş mekaniklerini, mantık kapılarını ve otomasyon sistemlerini Python ortamında simüle etmeni sağlar.
+🚀 Öne Çıkan ÖzelliklerGenişletilmiş Dünya ve Kamera: $40 \times 30$ boyutunda devasa bir ızgara alanı ve ok tuşlarıyla kontrol edilebilen akıcı kamera sistemi.Macera Modu ve Görevler: [M] tuşu ile geçiş yapabileceğin, adım adım görevleri tamamlayarak ilerleyeceğin bir macera modu.Çift Dil Desteği: [T] tuşuyla anlık olarak Türkçe ve İngilizce arayüz geçişi.Gelişmiş Hata Ayıklama (Debug): [SPACE] tuşuyla simülasyonu dondurabilir, [N] tuşuyla sinyal akışını adım adım takip edebilirsin.
 
-A lightweight, standalone 2D Redstone Logic Simulator written in Python using Pygame. Designed with modularity in mind so developers can easily fork and contribute new blocks, logic, or features.
+Blueprint (Şablon) Sistemi: [C] tuşuyla 3x3 devreyi kopyalayıp [V] tuşuyla istediğin yere anında yapıştırabilirsin.
 
-## 🚀 Features
-- **Paginating Chest GUI:** 27 slots per page with interactive `<` and `>` button navigation.
-- **Advanced Mechanics:** Repeaters (delays), Comparators, Pistons, Observers, and Sculk Sensors (wireless vibrations).
-- **Procedural Pixel Art:** Zero external `.png` dependencies. Fully rendered using Python algorithms.
-- **Developer Friendly:** Clean Object-Oriented Architecture (`RedstoneEngine` class).
+Kablo Renklendirme: Karmaşık hatları yönetmek için kablolara sağ tıklayarak farklı renkler verebilirsin.
 
-## 🎮 Controls
-- **Left Click:** Break Block
-- **Right Click:** Place Block / Toggle Component (Switch, Repeater Tick, Comparator Mode)
-- **Middle Click:** Pick Block from Grid
-- **[E]:** Open/Close Inventory GUI
-- **[R]:** Clear Grid Map
-- **[1-9]:** Fast Hotbar Selection
+JSON Kaydetme & Yükleme: Tasarladığın devreleri dosyalayabilir ([S]), dilediğin zaman geri yükleyebilirsin ([L]).
 
-## 🛠️ How to Contribute / Add New Blocks
-1. Add your block definition to `ALL_TOOLS` dictionary.
-2. Implement your visual texture logic inside `draw_texture()`.
-3. Add custom propagation rules in `update_signals()`.
-4. Submit a Pull Request!
+Geri Al (Undo): [CTRL + Z] ile hatalı hamlelerini anında geri al.
 
-## 📦 Installation
-```bash
+🧩 Desteklenen Bileşenler ve KapılarKatı Blok, Redstone Kablosu, Şalter, Redstone Lambası, MeşaleRepeater (gecikme ayarlı), Karşılaştırıcı (Comparator)Piston, Yapışkan Piston (Sticky Piston), Gözcü (Observer)Redstone Bloğu, Cam (dikey sinyal geçişi), Sculk SensörNot Bloku (Note Block), Huni (Hopper)Mantık Kapıları: AND, OR, XOR Kapıları🎮 Klavye KısayollarıTuş / Kombinasyonİşlev
+Ok Tuşları	Kamerayı hareket ettir
+E / ESC	Envanteri aç / kapat
+S / L	Devreyi Kaydet / Yükle
+SPACE	Simülasyonu Durdur / Devam Ettir
+N	Durdurulmuş modda adım adım ilerle
+M	Serbest Mod / Macera Modu değiştir
+T	Türkçe / İngilizce dil değiştir
+C / V	Blueprint Kopyala / Yapıştır
+CTRL + Z	Son hamleyi geri al
+R	Haritayı tamamen temizle
+1-9	Hızlı envanter slotu seçimi
+
+🛠️ Kurulum ve Çalıştırma
+Projeyi çalıştırmak için bilgisayarında Python ve Pygame kütüphanesinin yüklü olması yeterlidir.
+
+Depoyu klonla veya indir.
+
+Terminalde Pygame kütüphanesini yükle:
+
+Bash
 pip install pygame
-python main.py
+Oyunu çalıştır:
+
+Bash
+python "Yeni Python file.py"
+
+📜 Lisans
+Bu proje MIT lisansı altında açık kaynak olarak geliştirilmiştir. Dilediğin gibi katkı sağlayabilir veya geliştirebilirsin.
